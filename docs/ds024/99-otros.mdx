@@ -1,0 +1,64 @@
+---
+title: Otros
+---
+export const Tacho = ({color}) => {
+  const translate_color = {
+    azul: {
+      backgroundColor: 'blue',
+      color: 'white'
+    },
+    rojo: {
+      backgroundColor: 'red',
+      color: 'white'
+    },
+    amarillo: {
+      backgroundColor: 'yellow',
+      color: 'black'
+    },
+    verde: {
+      backgroundColor: 'green',
+      color: 'white'
+    },
+    blanco: {
+      backgroundColor: 'white',
+      color: 'black'
+    },
+    marron: {
+      backgroundColor: 'brown',
+      color: 'white'
+    },
+    plomo: {
+      backgroundColor: 'gray',
+      color: 'white'
+    },
+    negro: {
+      backgroundColor: 'black',
+      color:'white'
+    }
+  }
+  return (
+    <div style={{...translate_color[color], textAlign:'center', borderRadius:4, paddingLeft:4, paddingRight:4, fontWeight:'bold'}}>{color}</div>
+  )
+}
+
+## Gestión de Residuos solidos
+
+| Tipo de residuo | Color |
+| ---------- | ---------- |
+| Papel y carton  | <Tacho color="azul" /> |
+| Plastico  | <Tacho color="blanco" /> |
+| Metales  | <Tacho color="amarillo" /> |
+| Orgánicos  | <Tacho color="marron" /> |
+| Vidrio  | <Tacho color="plomo" /> |
+| Peligrosos  | <Tacho color="rojo" /> |
+| No reaprovechables  | <Tacho color="negro" /> |
+
+Referencia: DL 1278 Ley de Gestión Integral de Residuos Sólidos
+
+### Aspectos
+
+Es todo aquello que vemos que es capaz de hacer daño al medio ambiente. Ejemplo Aceite Residual, Residuos Sólidos.
+
+### Impacto
+
+El impacto ambiental es la alteración del medio ambiente, provocada directa o indirectamente por un proyecto o actividad en un área determinada, en términos simples el impacto ambiental es la modificación del ambiente ocasionada por la acción del hombre o de la naturaleza.
